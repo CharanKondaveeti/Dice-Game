@@ -23,7 +23,7 @@ html {
 }
 
 .dice--logo {
-    background-image: url(../Dice_game/diceLogo.png);
+    background-image: url(diceLogo.png);
     /* background: 70% 100%; */
     background-repeat: no-repeat;
     background-position: center;
