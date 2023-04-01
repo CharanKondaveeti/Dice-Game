@@ -22,6 +22,19 @@ html {
     color: black;
 }
 
+.dice--logo {
+    background-image: url(../Dice_game/diceLogo.png);
+    /* background: 70% 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+
+
+    width: 18rem;
+    height: 12rem;
+}
+
+
 .section--dice-roll-game {
     height: 100vh;
     background-color: #e03131;
