@@ -145,7 +145,7 @@ html {
     justify-self: stretch;
     height: 30rem;
 
-    background-image: url('diceboard.png');
+    background-image: url('../diceboard.png');
     background: 70% 100%;
     background-repeat: no-repeat;
     background-position: center;
