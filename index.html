@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="dice_game.css">
+    <link rel="stylesheet" href="dices.css">
+</head>
+
+<body>
+    <section class="section--dice-roll-game">
+        <div class="game--space">
+
+            <section class="loading--page">
+                <div class="two--dices">
+                    <div class="dice1Wrapper">
+                        <div class="dice dice1">
+                            <div class="face num1"><span class="dot"></span></div>
+                            <div class="face num2">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num3">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num4">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num5">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num6"><span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dice2Wrapper">
+
+                        <div class="dice dice2">
+                            <div class="face num1"><span class="dot"></span></div>
+
+                            <div class="face num2">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num3">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num4">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num5">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num6"><span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h1 class="game--tittle">the dice game</h1>
+                <a class="play--button" href="#">Play</a>
+
+            </section>
+
+            <div class="gary--background"></div>
+
+            <section class="name--input--section">
+                <p class="ask--name">enter your name !</p>
+                <div class="playername">
+                    <input type="text" maxlength="7" class="nameInput">
+                    <div class="submit--button">ok</div>
+                </div>
+            </section>
+
+            <section class="section--instructions">
+                <div class="instructions">
+                    <div class="close--button"><ion-icon name="close-sharp"></ion-icon></div>
+                    <h1 class="instr--tittle">instructions</h1>
+                    <ul class="inst--points">
+                        <li>Look at the instruction manual from some of your favorite games.</li>
+                        <li>Write your instructions to be read aloud. When you write the instructions and information of
+                            your game,</li>
+                        <li>Use the second person. Instead of saying “When a player…” or “The player…” Try saying “When
+                            you…” as much as possible.</li>
+                        <li>sMake game terms easy to find and understand. When using a game term, such as a type of
+                            card,
+                            action, piece, etc.,</li>
+                        <li>Explain the concept or goal of the game. Give your players a preview and overview of how the
+                            game works.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="restart--confirmation">
+                <p>do you want to restart ?</p>
+                <div class="confirmation--buttons">
+                    <a class="restart--yes" href="#">yes</a>
+                    <a class="restart--no" href="#">no</a>
+                </div>
+            </section>
+
+            <div class="active--game">
+
+                <div class="roll--button">roll
+                    <ion-icon name="game-controller-outline"></ion-icon>
+                </div>
+
+                <div class="feature--button restart--button">restart
+                    <!-- <ion-icon name="refresh-outline"></ion-icon> -->
+
+                </div>
+                <div class="feature--button history--button">
+                    history
+                </div>
+
+                <div class="playerName--playerTittle">
+                    <h2 class="player--heading userplayer--heading">player 1</h2>
+                    <div class="cash user--cash">
+                        <span class="cash--Icon"><img src="coin.png" alt=""></span>
+                        <span class="user--cash--available">2000</span>
+                    </div>
+                </div>
+
+                <div class="dice--logo"></div>
+
+                <div class="playerName--playerTittle">
+                    <h2 class="cpu_player--heading player--heading">player 2</h2>
+                    <div class="cash cpu--cash">
+                        <span class="cash--Icon"><img src="coin.png" alt=""></span>
+                        <div class="infinity--icon">
+                            <ion-icon name="infinite-sharp"></ion-icon>
+                        </div>
+                    </div>
+
+                </div>
+
+                <section class="footer--indications">
+
+
+                    <div class="player--scores">
+                        <!-- <p class="player--score player_1_score">23</p> -->
+                        <p class="indicator">player1&nbsp&nbspwon</p>
+                        <!-- <p class="player--score player_2_score">45</p> -->
+                    </div>
+
+                    <div class="betAmountsetter">
+                        <span class="amout--indicator">Bet Amount</span>
+                        <div class="bet--icon">
+                            <img src="../Dice_game/betIcon.png" alt="">
+                        </div>
+                        <div class="bet--range--selector">
+                            <label id="bet--label" for="volume">100</label>
+                            <input type="range" id="bet--amount-input" name="volume" min="100" max="1000">
+                            <label id="bet--label" for="volume">1000</label>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section class="bet--warning">
+                    <div class="close--betWarning--button">
+
+                    </div>
+                </section> -->
+
+                <section class="game--board">
+                    <div class="board--dices">
+                        <div class=" player--dice player1_dice">
+                            <div class="face num1"><span class="dot"></span></div>
+                            <div class="face num2">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num3">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num4">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num5">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num6"><span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                        <div class=" player--dice player2_dice">
+                            <div class="face num1"><span class="dot"></span></div>
+                            <div class="face num2">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num3">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num4">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num5">
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+
+                            <div class="face num6"><span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                                <span class="dot"></span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="rotator">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                </div>
+
+            </div>
+
+            <section class="history">
+
+                <div class="history--closeButton"><ion-icon name="close-sharp"></ion-icon></div>
+
+                <table class="headings">
+                    <thead>
+                        <tr class="table--row">
+                            <th>s.no</th>
+                            <th>plyer</th>
+                            <th>cpu</th>
+                            <th>bet</th>
+                            <th>winner</th>
+                            <th>result</th>
+                            <th>cash avlbl</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="heading--body">
+                    </tbody>
+                </table>
+
+                <!-- <div class="history--list">
+                </div> -->
+            </section>
+
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="dice_game.js"></script>
+</body>
+
+</html>
