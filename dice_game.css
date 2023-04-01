@@ -502,7 +502,7 @@ html {
 
 .game--board {
     position: relative;
-    background-image: url(../Dice_game/diceboard.png);
+    background-image: url(diceboard.png);
 
     width: 40rem;
     height: 20rem;
